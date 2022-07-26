@@ -3,4 +3,6 @@
 
 <input (keyup)="changeImage($event)" [value]="imgUrl" />
 
-<app-post [postImg]="imgUrl"></app-post>
+<app-post [img]="imgUrl" (imgSelected)="logImg($event)">
+  <p>Some caption</p>
+</app-post>
