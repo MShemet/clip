@@ -10,6 +10,7 @@ import {
   AfterContentChecked,
   AfterViewInit,
   AfterViewChecked,
+  OnDestroy,
 } from '@angular/core';
 
 @Component({
@@ -25,7 +26,8 @@ export class PostComponent
     AfterContentInit,
     AfterContentChecked,
     AfterViewInit,
-    AfterViewChecked
+    AfterViewChecked,
+    OnDestroy
 {
   @Input('img') postImg = '';
 
@@ -61,6 +63,10 @@ export class PostComponent
 
   ngAfterContentInit(): void {
     console.log('ngAfterContentInit() called');
+  }
+
+  ngOnDestroy(): void {
+    console.log('ngOnDestroy() called');
   }
 
   selectImg(): void {
