@@ -5,3 +5,12 @@ input {
   margin-top: 12px;
   margin-bottom: 12px;
 }
+
+hr {
+  margin: 20px 0;
+}
+
+.blue {
+  background-color: blue;
+  color: white;
+}
